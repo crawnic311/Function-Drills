@@ -243,7 +243,12 @@ emailCheck('   dillon.craw@gmail.com   ')
 */
 
 //CODE HERE
-
+function buyChocolateFrogs(goldSpend) {
+  return Math.round(goldSpend / 3);
+}
+let gold = 40;
+let totalFrogs = buyChocolateFrogs(gold);
+console.log(totalFrogs);
 
 ////////////////// PROBLEM 14 ////////////////////
 /*

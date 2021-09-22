@@ -138,7 +138,15 @@ printAllNames(namesArr);
 */
 
 //CODE HERE
-
+function thatsOdd(aNum) {
+  if(aNum % 2 == 0) {
+    console.log("That's not odd!");
+  }
+  else {
+    console.log("That is odd indeed!");
+  }
+}
+var oddChecker = thatsOdd(3);
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]

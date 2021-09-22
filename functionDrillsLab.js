@@ -187,6 +187,15 @@ let loser = 'Glimmer'
 */
 
 //CODE HERE
+function theEliminator(contestantsArr, loser) {
+  for(i = 0; i < contestantsArr.length; i++) {
+    if(contestantsArr[i] === loser) {
+      contestantsArr.splice(i, 1);
+    }
+  }
+  return contestantsArr;
+}
+console.log(theEliminator(contestants, loser));
 
 
 ////////////////// PROBLEM 11 ////////////////////

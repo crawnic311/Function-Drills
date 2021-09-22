@@ -265,7 +265,17 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+function arrayAscendingChecker(anArray) {
+  for(i = 0; i < anArray.length; i++) {
+    if(anArray[i] > anArray[i+1]) {
+      return false;
+    }
+  }
+  return true;
+}
 
+let arrayIsAscending = arrayAscendingChecker(sampleArray);
+console.log(arrayIsAscending);
 
 ////////////////// PROBLEM 16 ////////////////////
 

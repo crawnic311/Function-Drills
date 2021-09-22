@@ -50,7 +50,14 @@ greeting("Adam");
 */
 
 //CODE HERE
+function add(num1, num2) {
+  num1 = +num1;
+  num2 = +num2;
+  return num1 + num2;
+}
 
+var sum = add(42, 311);
+console.log(sum);
 
 ////////////////// PROBLEM 5 ////////////////////
 /*

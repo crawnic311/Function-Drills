@@ -56,7 +56,7 @@ function add(num1, num2) {
   return num1 + num2;
 }
 
-var sum = add(42, 311);
+let sum = add(42, 311);
 console.log(sum);
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -80,7 +80,7 @@ function nameCheck(name) {
     return `Cool name, ${name}`;
   }
 }
-var nameGreeting = nameCheck("David");
+let nameGreeting = nameCheck("David");
 console.log(nameGreeting);
 
 
@@ -110,7 +110,7 @@ function faveColorFinder(color) {
       console.log("You need to evaluate your favorite color choice");
   }
 }
-var colorRating = faveColorFinder("blue");
+let colorRating = faveColorFinder("blue");
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -146,7 +146,7 @@ function thatsOdd(aNum) {
     console.log("That is odd indeed!");
   }
 }
-var oddChecker = thatsOdd(3);
+let oddChecker = thatsOdd(3);
 
 ////////////////// PROBLEM 9 ////////////////////
 let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
@@ -160,6 +160,22 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 */
 
 //CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  console.log(arr.length);
+  for(i = 0; i < arr.length; i++) {
+    if(arr[i] > 100) {
+      answers.push('big');
+    }
+    else {
+      answers.push('small');
+    }
+    console.log(answers[0]);
+  }
+  return answers;
+}
+let arrayEvaluator = bigOrSmall(bigOrSmallArray);
+console.log(arrayEvaluator);
 
 
 ////////////////// PROBLEM 10 ////////////////////

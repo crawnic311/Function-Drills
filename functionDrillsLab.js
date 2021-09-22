@@ -35,7 +35,11 @@ printName("Cameron");
 */
 
 //CODE HERE
-
+function greeting(name) {
+  name = String(name);
+  console.log("Hello, " + name);
+}
+greeting("Adam");
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
